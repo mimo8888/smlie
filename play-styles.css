@@ -1,0 +1,426 @@
+/* 播放页面主样式 */
+.play-main {
+    padding-top: 80px;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    min-height: calc(100vh - 80px);
+    background: var(--darker-bg);
+}
+
+/* 视频播放器样式优化 */
+.video-player-section {
+    margin-bottom: 2rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border-radius: 20px;
+    overflow: hidden;
+    margin-top: 3.5rem;
+}
+
+.video-container {
+    width: 100%;
+    background: var(--dark-bg);
+    position: relative;
+}
+
+.video-player {
+    position: relative;
+    width: 100%;
+    padding-top: 56.25%;
+    background: linear-gradient(45deg, #1a1a1a, #2d2d2d);
+}
+
+.video-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.video-placeholder:hover {
+    background: linear-gradient(135deg, #2a5298, #1e3c72);
+}
+
+.play-icon {
+    font-size: 5rem;
+    color: rgba(255, 255, 255, 0.9);
+    transition: all 0.3s ease;
+    text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.video-placeholder:hover .play-icon {
+    transform: scale(1.1);
+    color: white;
+}
+
+/* 播放器控制栏优化 */
+.player-controls {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.9), transparent);
+    padding: 2rem 1.5rem 1rem;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.video-player:hover .player-controls {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 2px;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.progress {
+    width: 30%;
+    height: 100%;
+    background: var(--primary-color);
+    border-radius: 2px;
+    position: relative;
+    transition: width 0.1s ease;
+}
+
+.progress::after {
+    content: '';
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 10px;
+    height: 10px;
+    background: white;
+    border-radius: 50%;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.progress-bar:hover .progress::after {
+    opacity: 1;
+}
+
+.control-buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.control-buttons button {
+    background: none;
+    border: none;
+    color: white;
+    cursor: pointer;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.control-buttons button:hover {
+    color: var(--primary-color);
+    transform: scale(1.1);
+}
+
+.time {
+    color: white;
+    font-size: 0.9rem;
+    font-family: monospace;
+}
+
+/* 视频信息区域优化 */
+.video-info-section {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 0.5s ease;
+}
+
+.video-details h1 {
+    font-size: 2.2rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.video-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-bottom: 1.2rem;
+    color: var(--text-secondary);
+}
+
+.video-meta span {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.video-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1.5rem;
+    margin: 1.5rem 0;
+}
+
+.action-buttons button {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.8rem 1.8rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.05);
+    color: var(--text-primary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.action-buttons button:hover {
+    background: var(--gradient-1);
+    transform: translateY(-2px);
+    border-color: transparent;
+}
+
+.action-buttons .icon {
+    font-size: 1.2rem;
+}
+
+/* 演职人员区域优化 */
+.cast-section {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.cast-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2rem;
+    padding: 1.5rem 0;
+}
+
+.cast-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.cast-item:hover {
+    transform: translateY(-5px);
+}
+
+.cast-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.cast-item:hover .cast-avatar {
+    border-color: var(--primary-color);
+    box-shadow: 0 0 20px rgba(0, 168, 255, 0.3);
+}
+
+.cast-info {
+    text-align: center;
+}
+
+.cast-info h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.3rem;
+    color: var(--text-primary);
+}
+
+.cast-info p {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+/* 评论区优化 */
+.comments-section {
+    background: var(--card-bg);
+    border-radius: 20px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.comment-form {
+    margin-bottom: 2rem;
+}
+
+.comment-form textarea {
+    width: 100%;
+    height: 120px;
+    padding: 1.2rem;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    background: var(--dark-bg);
+    color: var(--text-primary);
+    resize: none;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.comment-form textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(0, 168, 255, 0.1);
+}
+
+.submit-comment {
+    padding: 0.8rem 2rem;
+    border: none;
+    border-radius: 30px;
+    background: var(--gradient-1);
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.submit-comment:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(0, 168, 255, 0.3);
+}
+
+.comment-item {
+    display: flex;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.02);
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.comment-item:hover {
+    background: rgba(255, 255, 255, 0.05);
+    transform: translateX(5px);
+}
+
+.comment-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.comment-content {
+    flex: 1;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.8rem;
+}
+
+.comment-header h4 {
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.comment-time {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.comment-actions {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.comment-actions button {
+    background: none;
+    border: none;
+    color: var(--text-secondary);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+}
+
+.comment-actions button:hover {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--primary-color);
+}
+
+/* 动画效果 */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* 响应式优化 */
+@media (max-width: 768px) {
+    .play-main {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .video-details h1 {
+        font-size: 1.8rem;
+    }
+
+    .video-meta,
+    .video-stats,
+    .action-buttons {
+        gap: 1rem;
+    }
+
+    .cast-list {
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 1rem;
+    }
+
+    .cast-avatar {
+        width: 80px;
+        height: 80px;
+    }
+
+    .comment-item {
+        padding: 1rem;
+    }
+}

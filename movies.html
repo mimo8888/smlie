@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>电影专区 - 视频资源网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="movies-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>视频资源网站</h1>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="搜索电影...">
+                <button>搜索</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html" class="active">电影</a></li>
+                <li><a href="#tv">电视剧</a></li>
+                <li><a href="#anime">动漫</a></li>
+                <li><a href="#documentary">纪录片</a></li>
+                <li><a href="vip.html">开通VIP</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="login.html" class="login-btn">登录</a>
+                <a href="register.html" class="register-btn">注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="movies-main">
+        <!-- 电影分类筛选 -->
+        <section class="movie-filters">
+            <div class="filter-group">
+                <span class="filter-label">类型：</span>
+                <div class="filter-options">
+                    <a href="#" class="filter-tag active">全部</a>
+                    <a href="#" class="filter-tag">动作</a>
+                    <a href="#" class="filter-tag">科幻</a>
+                    <a href="#" class="filter-tag">喜剧</a>
+                    <a href="#" class="filter-tag">爱情</a>
+                    <a href="#" class="filter-tag">恐怖</a>
+                    <a href="#" class="filter-tag">动画</a>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">地区：</span>
+                <div class="filter-options">
+                    <a href="#" class="filter-tag active">全部</a>
+                    <a href="#" class="filter-tag">华语</a>
+                    <a href="#" class="filter-tag">欧美</a>
+                    <a href="#" class="filter-tag">韩国</a>
+                    <a href="#" class="filter-tag">日本</a>
+                </div>
+            </div>
+            <div class="filter-group">
+                <span class="filter-label">年份：</span>
+                <div class="filter-options">
+                    <a href="#" class="filter-tag active">全部</a>
+                    <a href="#" class="filter-tag">2024</a>
+                    <a href="#" class="filter-tag">2023</a>
+                    <a href="#" class="filter-tag">2022</a>
+                    <a href="#" class="filter-tag">2021</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- 电影排序 -->
+        <section class="movie-sort">
+            <div class="sort-options">
+                <a href="#" class="sort-btn active">最新上线</a>
+                <a href="#" class="sort-btn">最多播放</a>
+                <a href="#" class="sort-btn">最高评分</a>
+            </div>
+        </section>
+
+        <!-- 电影列表 -->
+        <section class="movie-list">
+            <div class="movie-grid">
+                <!-- 第一行电影卡片 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">9.2</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>流浪地球3</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">科幻</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：郭帆 | 主演：吴京/刘德华/李雪健</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.9</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>热辣滚烫</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">喜剧</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：贾玲 | 主演：贾玲/雷佳音/张小斐</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.7</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>年会不能停</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">喜剧</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：董润年 | 主演：大鹏/白客/王迅</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.8</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>金手指</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">动作</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：王宝强 | 主演：梁朝伟/周迅/王宝强</p>
+                    </div>
+                </div>
+
+                <!-- 第二行电影卡片 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">9.3</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>奥本海默</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">传记</span>
+                            <span class="movie-year">2023</span>
+                        </div>
+                        <p class="movie-cast">导演：诺兰 | 主演：基里安·墨菲/小罗伯特</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.9</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>飞驰人生2</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">喜剧</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：韩寒 | 主演：沈腾/范丞丞/尹正</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.6</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>红毯先生</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">喜剧</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：大鹏 | 主演：大鹏/李雪琴/王圣迪</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.5</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>第二十条</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">剧情</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：张律 | 主演：徐峥/马伊琍/吴越</p>
+                    </div>
+                </div>
+
+                <!-- 第三行电影卡片 -->
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">9.1</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>疯狂动物城2</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">动画</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：里奇·摩尔 | 迪士尼出品</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">9.0</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>邓小平小道</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">传记</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：傅东育 | 主演：马少骅/柯蓝</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.8</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>我们的一天</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">剧情</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：曹保平 | 主演：胡歌/孙俪/韩童生</p>
+                    </div>
+                </div>
+
+                <div class="movie-card">
+                    <div class="movie-poster">
+                        <span class="movie-score">8.7</span>
+                        <div class="movie-actions">
+                            <button class="play-btn">播放</button>
+                            <button class="collect-btn">收藏</button>
+                        </div>
+                    </div>
+                    <div class="movie-info">
+                        <h3>非诚勿扰3</h3>
+                        <div class="movie-meta">
+                            <span class="movie-type">喜剧</span>
+                            <span class="movie-year">2024</span>
+                        </div>
+                        <p class="movie-cast">导演：冯小刚 | 主演：葛优/舒淇/赵薇</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 分页 -->
+            <div class="pagination">
+                <a href="#" class="page-btn prev">上一页</a>
+                <a href="#" class="page-btn active">1</a>
+                <a href="#" class="page-btn">2</a>
+                <a href="#" class="page-btn">3</a>
+                <span class="page-dots">...</span>
+                <a href="#" class="page-btn">10</a>
+                <a href="#" class="page-btn next">下一页</a>
+            </div>
+        </section>
+
+        <!-- 推荐电影 -->
+        <section class="movie-recommendations">
+            <h2>猜你喜欢</h2>
+            <div class="recommendation-grid">
+                <!-- 推荐电影卡片 -->
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 保持与主页相同的页脚 -->
+    </footer>
+
+    <button id="back-to-top" class="back-to-top">
+        <span class="arrow">↑</span>
+        <span class="text">顶部</span>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+</html>

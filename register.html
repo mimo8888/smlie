@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册 - 视频资源网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>视频资源网站</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="#tv">电视剧</a></li>
+                <li><a href="#anime">动漫</a></li>
+                <li><a href="#documentary">纪录片</a></li>
+                <li><a href="vip.html">开通VIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2>新用户注册</h2>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="phone">手机号</label>
+                        <div class="phone-input">
+                            <input type="tel" id="phone" name="phone" required>
+                            <button type="button" class="send-code">发送</button>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="verify-code">验证码</label>
+                        <input type="text" id="verify-code" name="verify-code" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="new-password">设置密码</label>
+                        <input type="password" id="new-password" name="new-password" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="confirm-password">确认密码</label>
+                        <input type="password" id="confirm-password" name="confirm-password" required>
+                    </div>
+                    <div class="form-agreement">
+                        <label>
+                            <input type="checkbox" name="agreement" required>
+                            <span>我已阅读并同意<a href="#">用户协议</a>和<a href="#">隐私政策</a></span>
+                        </label>
+                    </div>
+                    <button type="submit" class="auth-submit">注册</button>
+                </form>
+                <p class="auth-switch">
+                    已有账号？<a href="login.html">立即登录</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 保持与主页相同的页脚 -->
+    </footer>
+</body>
+</html>

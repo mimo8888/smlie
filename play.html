@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频播放 - 视频资源网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="play-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>视频资源网站</h1>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="搜索视频...">
+                <button>搜索</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="#tv">电视剧</a></li>
+                <li><a href="#anime">动漫</a></li>
+                <li><a href="#documentary">纪录片</a></li>
+                <li><a href="vip.html">开通VIP</a></li>
+            </ul>
+            <div class="user-actions">
+                <a href="login.html" class="login-btn">登录</a>
+                <a href="register.html" class="register-btn">注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="play-main">
+        <!-- 视频播放区域 -->
+        <section class="video-player-section">
+            <div class="video-container">
+                <div class="video-player">
+                    <!-- 使用渐变背景代替视频 -->
+                    <div class="video-placeholder">
+                        <span class="play-icon">▶</span>
+                    </div>
+                    <div class="player-controls">
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="control-buttons">
+                            <button class="play-pause">播放</button>
+                            <div class="time">00:00 / 02:30:15</div>
+                            <button class="fullscreen">全屏</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 视频信息区域 -->
+        <section class="video-info-section">
+            <div class="video-details">
+                <h1>流浪地球3</h1>
+                <div class="video-meta">
+                    <span class="rating">评分：9.2</span>
+                    <span class="year">2024</span>
+                    <span class="category">科幻/动作</span>
+                    <span class="duration">时长：2小时30分</span>
+                </div>
+                <div class="video-stats">
+                    <span class="views">观看：150万</span>
+                    <span class="likes">点赞：2.8万</span>
+                    <span class="comments">评论：1.2万</span>
+                </div>
+            </div>
+
+            <div class="action-buttons">
+                <button class="like-btn">
+                    <span class="icon">👍</span>
+                    点赞
+                </button>
+                <button class="collect-btn">
+                    <span class="icon">⭐</span>
+                    收藏
+                </button>
+                <button class="share-btn">
+                    <span class="icon">🔗</span>
+                    分享
+                </button>
+            </div>
+
+            <div class="video-description">
+                <h3>剧情简介</h3>
+                <p>该片讲述了在人类即将完成"重启地球计划"之际，月球发生意外，全人类面临生死存亡的终极危机。在月球、地球、木星三大空间阵地，人类命运进入最后的倒计时，完整讲述了"流浪地球"计划从启动到完成的传奇历程。</p>
+            </div>
+        </section>
+
+        <!-- 演职人员信息 -->
+        <section class="cast-section">
+            <h3>演职人员</h3>
+            <div class="cast-list">
+                <div class="cast-item">
+                    <div class="cast-avatar" style="background: linear-gradient(45deg, #1e3c72, #2a5298);"></div>
+                    <div class="cast-info">
+                        <h4>郭帆</h4>
+                        <p>导演</p>
+                    </div>
+                </div>
+                <div class="cast-item">
+                    <div class="cast-avatar" style="background: linear-gradient(45deg, #c31432, #240b36);"></div>
+                    <div class="cast-info">
+                        <h4>吴京</h4>
+                        <p>主演</p>
+                    </div>
+                </div>
+                <div class="cast-item">
+                    <div class="cast-avatar" style="background: linear-gradient(45deg, #654ea3, #eaafc8);"></div>
+                    <div class="cast-info">
+                        <h4>刘德华</h4>
+                        <p>主演</p>
+                    </div>
+                </div>
+                <div class="cast-item">
+                    <div class="cast-avatar" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                    <div class="cast-info">
+                        <h4>李雪健</h4>
+                        <p>主演</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 相关推荐 -->
+        <section class="related-videos">
+            <h3>相关推荐</h3>
+            <div class="video-grid">
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:15:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>流浪地球2</h3>
+                        <p class="description">人类为拯救地球进行的壮丽冒险...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：180万</span>
+                            <span class="rating">评分：9.0</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:30:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>星际穿越</h3>
+                        <p class="description">诺兰科幻巨作，横跨星际的父女情...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：150万</span>
+                            <span class="rating">评分：9.4</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:20:00</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>火星救援</h3>
+                        <p class="description">孤独宇航员的火星求生记...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：120万</span>
+                            <span class="rating">评分：8.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:25:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>地心引力</h3>
+                        <p class="description">太空灾难中的生存之战...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：100万</span>
+                            <span class="rating">评分：8.8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 评论区 -->
+        <section class="comments-section">
+            <h3>评论区</h3>
+            <div class="comment-form">
+                <textarea placeholder="发表您的评论..."></textarea>
+                <button class="submit-comment">发表评论</button>
+            </div>
+            <div class="comments-list">
+                <div class="comment-item">
+                    <div class="comment-avatar" style="background: linear-gradient(45deg, #4568dc, #b06ab3);"></div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <h4>科幻迷</h4>
+                            <span class="comment-time">2小时前</span>
+                        </div>
+                        <p>特效真的太震撼了，国产科幻电影终于可以跟好莱坞比肩了！</p>
+                        <div class="comment-actions">
+                            <button>👍 2.4k</button>
+                            <button>回复</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="comment-item">
+                    <div class="comment-avatar" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                    <div class="comment-content">
+                        <div class="comment-header">
+                            <h4>电影达人</h4>
+                            <span class="comment-time">5小时前</span>
+                        </div>
+                        <p>剧情紧凑，演员演技在线，特别是李雪健老师的表演太有感染力了！</p>
+                        <div class="comment-actions">
+                            <button>👍 1.8k</button>
+                            <button>回复</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <!-- 保持与主页相同的页脚 -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

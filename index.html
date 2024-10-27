@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>视频资源网站</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>视频资源网站</h1>
+            </div>
+            <div class="search-section">
+                <input type="text" placeholder="搜索视频...">
+                <button>搜索</button>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="#tv">电视剧</a></li>
+                <li><a href="#anime">动漫</a></li>
+                <li><a href="#documentary">纪录片</a></li>
+                <li><a href="vip.html" class="vip-link">开通VIP</a></li>  <!-- 添加这一行 -->
+            </ul>
+            <div class="user-actions">
+                <a href="login.html" class="login-btn">登录</a>
+                <a href="register.html" class="register-btn">注册</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slides">
+                <div class="slide active">
+                    <img src="https://img.3dmgame.com/uploads/images/news/20240116/1705394581_724114.jpg" alt="流浪地球3">
+                    <div class="slide-content">
+                        <h2>流浪地球3</h2>
+                        <p>2024年科幻巨制，正在热映</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://p1.itc.cn/q_70/images03/20231221/2f89b1d1bc8b4c73b7c5af8f7b2e63b1.jpeg" alt="繁花">
+                    <div class="slide-content">
+                        <h2>繁花</h2>
+                        <p>王家卫导演新作</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="https://image.9game.cn/2023/12/27/163518441.jpg" alt="鬼灭之刃">
+                    <div class="slide-content">
+                        <h2>鬼灭之刃 锻刀村篇</h2>
+                        <p>热血动漫持续连载中</p>
+                    </div>
+                </div>
+            </div>
+            <button class="slider-prev">❮</button>
+            <button class="slider-next">❯</button>
+            <div class="slider-dots"></div>
+        </section>
+
+        <section class="categories">
+            <h2>视频分类</h2>
+            <div class="category-grid">
+                <div class="category-card">
+                    <div class="category-content">
+                        <h3>电影</h3>
+                        <p>海量电影资源</p>
+                        <span class="count">10000+</span>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content">
+                        <h3>电视剧</h3>
+                        <p>精选剧集资源</p>
+                        <span class="count">8000+</span>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content">
+                        <h3>动漫</h3>
+                        <p>热门动漫资源</p>
+                        <span class="count">5000+</span>
+                    </div>
+                </div>
+                <div class="category-card">
+                    <div class="category-content">
+                        <h3>纪录片</h3>
+                        <p>高分纪录片资源</p>
+                        <span class="count">3000+</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="featured">
+            <h2>热门推荐</h2>
+            <div class="video-grid">
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/240119/329-240119145K4.jpg" alt="满江红">
+                        <span class="duration">2:30:15</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>满江红</h3>
+                        <p class="description">易烊千玺、沈腾主演，悬疑动作巨制...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：182万</span>
+                            <span class="rating">评分：4.7</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/230113/329-230113110G2.jpg" alt="三体">
+                        <span class="duration">45:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>三体</h3>
+                        <p class="description">根据刘慈欣科幻小说改编，重磅科幻剧...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：165万</span>
+                            <span class="rating">评分：4.6</span>
+                        </div>
+                    </div>
+                </a>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/240207/329-240207142J5.jpg" alt="热辣滚烫">
+                        <span class="duration">2:10:25</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>热辣滚烫</h3>
+                        <p class="description">贾玲导演自编自导自演，励志喜剧...</p>
+                        <div class="meta">
+                            <span class="views">观看数：145万</span>
+                            <span class="rating">评分：4.8</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/240125/329-240125142Z2.jpg" alt="年会不能停">
+                        <span class="duration">1:55:40</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>年会不能停</h3>
+                        <p class="description">大鹏、白客主演，爆笑职场喜剧...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：98万</span>
+                            <span class="rating">评分：4.5</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 第二组视频卡片 -->
+        <section class="featured">
+            <h2>最新上线</h2>
+            <div class="video-grid">
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/240116/329-240116145932.jpg" alt="流浪地球3">
+                        <span class="duration">2:15:30</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>流浪地球3</h3>
+                        <p class="description">2024年科幻巨制，继续讲述人类为拯救地球的壮丽故事...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：150万</span>
+                            <span class="rating">评分：4.8</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/230203/329-230203105H4.jpg" alt="狂飙">
+                        <span class="duration">45:20</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>狂飙</h3>
+                        <p class="description">张译、张颂文主演的热门犯罪剧，展现警匪斗智斗勇...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：280万</span>
+                            <span class="rating">评分：4.9</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/231211/329-231211143422.jpg" alt="鬼灭之刃">
+                        <span class="duration">23:45</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>鬼灭之刃 第四季</h3>
+                        <p class="description">炭治郎继续踏上斩杀恶鬼的征程，锻刀村篇精彩开启...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：98万</span>
+                            <span class="rating">评分：4.7</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="video-card">
+                    <div class="video-thumbnail">
+                        <img src="https://img.18183.com/uploads/allimg/230913/329-2309131GQ5.jpg" alt="蓝色星球3">
+                        <span class="duration">52:10</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>蓝色星球3</h3>
+                        <p class="description">BBC最新力作，带您探索海洋深处的神秘世界...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：45万</span>
+                            <span class="rating">评分：4.9</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 在 featured section 中的 video-grid 内添加更多视频卡片 -->
+        <div class="video-grid">
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.18183.com/uploads/allimg/240116/329-240116145932.jpg" alt="流浪地球3">
+                    <span class="duration">2:15:30</span>
+                </div>
+                <div class="video-info">
+                    <h3>流浪地球3</h3>
+                    <p class="description">2024年科幻巨制，继续讲述人类为拯救地球的壮丽故事...</p>
+                    <div class="meta">
+                        <span class="views">观看次数：150万</span>
+                        <span class="rating">评分：4.8</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.18183.com/uploads/allimg/230203/329-230203105H4.jpg" alt="狂飙">
+                    <span class="duration">45:20</span>
+                </div>
+                <div class="video-info">
+                    <h3>狂飙</h3>
+                    <p class="description">张译、张颂文主演的热门犯罪剧，展现警匪斗智斗勇...</p>
+                    <div class="meta">
+                        <span class="views">观看次数：280万</span>
+                        <span class="rating">评分：4.9</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.18183.com/uploads/allimg/231211/329-231211143422.jpg" alt="鬼灭之刃">
+                    <span class="duration">23:45</span>
+                </div>
+                <div class="video-info">
+                    <h3>鬼灭之刃 第四季</h3>
+                    <p class="description">炭治郎继续踏上斩杀恶鬼的征程，锻刀村篇精彩开启...</p>
+                    <div class="meta">
+                        <span class="views">观看次数：98万</span>
+                        <span class="rating">评分：4.7</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="video-card">
+                <div class="video-thumbnail">
+                    <img src="https://img.18183.com/uploads/allimg/230913/329-2309131GQ5.jpg" alt="蓝色星球3">
+                    <span class="duration">52:10</span>
+                </div>
+                <div class="video-info">
+                    <h3>蓝色星球3</h3>
+                    <p class="description">BBC最新力作，带您探索海洋深处的神秘世界...</p>
+                    <div class="meta">
+                        <span class="views">观看次数：45万</span>
+                        <span class="rating">评分：4.9</span>
+                    </div>
+                </div>
+            </div>
+
+            
+ 
+        </div>
+
+        <!-- 在 categories section 后添加新的分类展示区 -->
+        <section class="trending">
+            <h2>热播榜单</h2>
+            <div class="ranking-list">
+                <a href="play.html" class="rank-item">
+                    <div class="rank-number">1</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #1e3c72, #2a5298);"></div>
+                    <div class="rank-content">
+                        <h3>流浪地球3</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：9.2</span>
+                            <span class="rank-views">今日播放：50万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">科幻</span>
+                            <span class="rank-tag">动作</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </a>
+
+                <div class="rank-item">
+                    <div class="rank-number">2</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #c31432, #240b36);"></div>
+                    <div class="rank-content">
+                        <h3>热辣滚烫</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：8.9</span>
+                            <span class="rank-views">今日播放：45万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">喜剧</span>
+                            <span class="rank-tag">励志</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rank-item">
+                    <div class="rank-number">3</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #654ea3, #eaafc8);"></div>
+                    <div class="rank-content">
+                        <h3>飞驰人生2</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：8.8</span>
+                            <span class="rank-views">今日播放：42万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">喜剧</span>
+                            <span class="rank-tag">赛车</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 第二列 -->
+                <div class="rank-item">
+                    <div class="rank-number">4</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #11998e, #38ef7d);"></div>
+                    <div class="rank-content">
+                        <h3>年会不能停</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：8.7</span>
+                            <span class="rank-views">今日播放：38万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">喜剧</span>
+                            <span class="rank-tag">职场</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rank-item">
+                    <div class="rank-number">5</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #4568dc, #b06ab3);"></div>
+                    <div class="rank-content">
+                        <h3>奥本海默</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：9.3</span>
+                            <span class="rank-views">今日播放：35万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">传记</span>
+                            <span class="rank-tag">剧情</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="rank-item">
+                    <div class="rank-number">6</div>
+                    <div class="rank-poster" style="background: linear-gradient(45deg, #0f2027, #203a43, #2c5364);"></div>
+                    <div class="rank-content">
+                        <h3>第二十条</h3>
+                        <div class="rank-info">
+                            <span class="rank-rating">评分：8.6</span>
+                            <span class="rank-views">今日播放：32万</span>
+                        </div>
+                        <div class="rank-tags">
+                            <span class="rank-tag">剧情</span>
+                            <span class="rank-tag">社会</span>
+                            <span class="rank-quality">4K</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="recommendations">
+            <h2>根据您的喜好推荐</h2>
+            <div class="tags">
+                <span class="tag">动作</span>
+                <span class="tag">科幻</span>
+                <span class="tag">剧情</span>
+                <span class="tag">动漫</span>
+                <span class="tag">纪录片</span>
+            </div>
+            <div class="video-grid">
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:15:30</span>
+                        <span class="quality-tag">4K</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>星际穿越</h3>
+                        <p class="description">诺兰科幻巨作，人类寻找新家园的星际冒险...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：320万</span>
+                            <span class="rating">评分：9.4</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:32:15</span>
+                        <span class="quality-tag">4K</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>盗梦空间</h3>
+                        <p class="description">诺兰烧脑神作，潜入梦境的惊险冒险...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：280万</span>
+                            <span class="rating">评分：9.3</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:22:00</span>
+                        <span class="quality-tag">4K</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>黑客帝国：矩阵重启</h3>
+                        <p class="description">经典科幻系列最新力作，重返虚拟世界...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：210万</span>
+                            <span class="rating">评分：8.7</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">2:10:30</span>
+                        <span class="quality-tag">4K HDR</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>沙丘</h3>
+                        <p class="description">科幻史诗改编，探索神秘星球的冒险之旅...</p>
+                        <div class="meta">
+                            <span class="views">观看次数：195万</span>
+                            <span class="rating">评分：8.9</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!-- 在 recommendations section 后添加的内容 -->
+
+        <section class="latest-updates">
+            <h2>最新更新</h2>
+            <div class="update-tabs">
+                <button class="tab-btn active">今日更新</button>
+                <button class="tab-btn">本周热门</button>
+                <button class="tab-btn">即将上线</button>
+            </div>
+            <div class="video-grid">
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">45:00</span>
+                        <span class="quality-tag">4K</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>狂飙2</h3>
+                        <p class="description">重磅回归，张译张颂文再续警匪传奇...</p>
+                        <div class="meta">
+                            <span class="views">更新时间：2024-02-20</span>
+                            <span class="rating">评分：4.9</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">24:30</span>
+                        <span class="quality-tag">1080P</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>咒术回战 第二季</h3>
+                        <p class="description">五条悟VS宿傩，最强咒术师的巅峰对决...</p>
+                        <div class="meta">
+                            <span class="views">更新时间：2024-02-20</span>
+                            <span class="rating">评分：4.8</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">52:15</span>
+                        <span class="quality-tag">4K</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>三体 第二季</h3>
+                        <p class="description">面壁计划启动，人类文明的终极对决...</p>
+                        <div class="meta">
+                            <span class="views">更新时间：2024-02-20</span>
+                            <span class="rating">评分：4.7</span>
+                        </div>
+                    </div>
+                </a>
+
+                <a href="play.html" class="video-card">
+                    <div class="video-thumbnail">
+                        <span class="duration">45:30</span>
+                        <span class="quality-tag">HDR</span>
+                    </div>
+                    <div class="video-info">
+                        <h3>繁花 大结局</h3>
+                        <p class="description">王家卫导演力作，老上海的繁华落幕...</p>
+                        <div class="meta">
+                            <span class="views">更新时间：2024-02-20</span>
+                            <span class="rating">评分：4.8</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <section class="special-collection">
+            <h2>专题推荐</h2>
+            <div class="collection-grid">
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3>奥斯卡获电影</h3>
+                        <span class="collection-count">12部影片</span>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>奥本海默</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：克里斯托弗·诺兰</span>
+                                        <span class="actors">主演：基里安·墨菲</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.2</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">讲述了"原子弹之父"罗伯特·奥本海默的传奇人生...</p>
+                            </div>
+                        </div>
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>贫民窟的百万富翁</h4>
+                                <div class="preview-info">
+                                    <span class="director">导演：丹尼·博伊尔</span>
+                                    <span class="actors">主演：戴夫·帕特尔</span>
+                                </div>
+                                <p class="preview-desc">印度少年参加答题节目，讲述了他的人生故事...</p>
+                            </div>
+                        </div>
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>泰坦尼克号</h4>
+                                <div class="preview-info">
+                                    <span class="director">导演：詹斯·卡梅隆</span>
+                                    <span class="actors">主演：莱昂纳多·迪卡普里奥</span>
+                                </div>
+                                <p class="preview-desc">讲述了1912年泰坦尼克号沉船事件，以及一对男女之间的爱情故事...</p>
+                            </div>
+                        </div>
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>阿甘正传</h4>
+                                <div class="preview-info">
+                                    <span class="director">导演：罗伯特·泽米吉斯</span>
+                                    <span class="actors">主演：汤姆·汉克斯</span>
+                                </div>
+                                <p class="preview-desc">讲述了阿甘·甘普瑞特的传奇人生，他在美国历史的重要时期扮演了重要角色...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3>国产悬疑剧场</h3>
+                        <span class="collection-count">8部剧集</span>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>狂飙</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：徐纪周</span>
+                                        <span class="actors">主演：张译、张颂文、李一桐</span>
+                                        <span class="category">类型：犯罪、剧情</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.3</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">讲述了以高启强为首的不分子和以安欣为代表的人民警察之间殊死较量的故事...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>沉默的真相</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：陈奕甫</span>
+                                        <span class="actors">主演：白宇、白敬亭、宋宁峰</span>
+                                        <span class="category">类型：悬疑、犯罪</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.1</span>
+                                        <span class="year">2020</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">改编自紫金陈推理小说《长夜难明》，讲述了一起尘封多年的悬案真相...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>隐秘的角落</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：辛爽</span>
+                                        <span class="actors">主演：秦昊、王景春、荣梓杉</span>
+                                        <span class="category">类型：悬疑、犯罪</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.0</span>
+                                        <span class="year">2020</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">改编自紫金陈小说《坏小孩》，讲述了一起少年犯罪案件引发的连锁反应...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>白夜追凶</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：王伟</span>
+                                        <span class="actors">主演：潘粤明、王泷正、梁缘</span>
+                                        <span class="category">类型悬疑、推理</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.2</span>
+                                        <span class="year">2017</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">讲述了一对双胞胎兄弟，一个是警察一个是罪犯，展开的一系列悬疑故事...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3>经典动漫系列</h3>
+                        <span class="collection-count">10部作品</span>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>鬼灭之刃</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">制作：ufotable</span>
+                                        <span class="actors">主角：灶炭治郎、灶门祢豆子</span>
+                                        <span class="category">类型：热血、奇幻</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.4</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">少年炭治郎了寻找将妹妹变成鬼的罪魁祸首，踏上了斩杀恶鬼的征程...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>进击的巨人 最终季</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">制作：MAPPA</span>
+                                        <span class="actors">主角：艾伦·耶格尔</span>
+                                        <span class="category">类型：剧情、战斗</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.3</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">人类与巨人的终极对决，艾伦为了自由发动了地鸣，震撼人心的结局...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>间谍过家家</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">制作：WIT STUDIO</span>
+                                        <span class="actors">主角：洛伊德、约尔、安妮亚</span>
+                                        <span class="category">类型：喜剧、家庭</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.0</span>
+                                        <span class="year">2022</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">一个由间谍、杀手超能力者组成的特殊家庭，展开了一列有趣的故事...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>咒术回战</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">制作：MAPPA</span>
+                                        <span class="actors">主角：虎杖悠仁、五条悟</span>
+                                        <span class="category">类型：奇幻、战斗</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.2</span>
+                                        <span class="year">2023</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">高中生虎杖悠仁成为咒术师后，卷入了一场关于咒术世界的大战...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="collection-card">
+                    <div class="collection-header">
+                        <h3>热门科幻电影</h3>
+                        <span class="collection-count">6部作品</span>
+                    </div>
+                    <div class="collection-preview">
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>流浪地球3</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：郭帆</span>
+                                        <span class="actors">主演：吴京、刘德华、李雪健</span>
+                                        <span class="category">类型：科幻、冒险</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：8.9</span>
+                                        <span class="year">2024</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">地球发动机启动在即，人类面临空前危机，一场关乎人类命运的终极之战即将展开...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>星际穿越</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：克里斯托弗·诺兰</span>
+                                        <span class="actors">主演：马修·麦康纳、安妮·海瑟薇</span>
+                                        <span class="category">类型：科幻、冒险</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.4</span>
+                                        <span class="year">2014</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">一群探险家利用新发现的虫洞，展开了一场跨越时空的冒险，寻找类新家园...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>盗梦空间</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：克里斯托弗·诺兰</span>
+                                        <span class="actors">主演：莱昂纳多·迪卡普里奥</span>
+                                        <span class="category">类型：科幻、悬疑</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：9.3</span>
+                                        <span class="year">2010</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">专业盗梦者柯布接受了一个危险的任务：在别人的潜意识中植入想法...</p>
+                            </div>
+                        </div>
+
+                        <div class="preview-item">
+                            <div class="preview-content">
+                                <h4>头号玩家</h4>
+                                <div class="preview-info">
+                                    <div class="preview-meta">
+                                        <span class="director">导演：史蒂文·斯皮尔伯格</span>
+                                        <span class="actors">主演：泰伊·谢里丹、奥利维亚·库克</span>
+                                        <span class="category">类型：科幻、冒险</span>
+                                    </div>
+                                    <div class="preview-stats">
+                                        <span class="rating">评分：8.7</span>
+                                        <span class="year">2018</span>
+                                    </div>
+                                </div>
+                                <p class="preview-desc">在2045年的虚拟世界绿洲中，一场寻找彩蛋的竞赛引发了一系列惊心动魄的冒险...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="user-community">
+            <h2>用户社区</h2>
+            <div class="community-grid">
+                <div class="review-card">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Felix" alt="用户头像">
+                            <span class="user-badge">影评人</span>
+                        </div>
+                        <div class="user-details">
+                            <h4>影视达人</h4>
+                            <div class="user-stats">
+                                <span class="user-level">Lv.8</span>
+                                <span class="user-posts">评论 286</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-title">
+                            <span class="review-movie">《流浪地球3》</span>
+                            <span class="review-rating">★★★★★ 9.2分</span>
+                        </div>
+                        <p class="review-text">特效真的震撼，剧情紧凑，看得热血沸腾！中国科幻电影终于可以跟好莱坞比肩了。</p>
+                        <div class="review-images">
+                            <div class="review-image" style="background: linear-gradient(45deg, #1e3c72, #2a5298);"></div>
+                            <div class="review-image" style="background: linear-gradient(45deg, #2193b0, #6dd5ed);"></div>
+                        </div>
+                    </div>
+                    <div class="review-actions">
+                        <button class="action-btn like-btn">
+                            <span class="action-icon">👍</span>
+                            <span class="action-count">2.4k</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <span class="action-icon">💬</span>
+                            <span class="action-count">328</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <span class="action-icon">🔗</span>
+                            <span class="action-text">分享</span>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="review-card">
+                    <div class="user-info">
+                        <div class="user-avatar">
+                            <img src="https://api.dicebear.com/7.x/avataaars/svg?seed=Lucy" alt="用户头像">
+                            <span class="user-badge">资深会员</span>
+                        </div>
+                        <div class="user-details">
+                            <h4>电影控</h4>
+                            <div class="user-stats">
+                                <span class="user-level">Lv.6</span>
+                                <span class="user-posts">评论 156</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="review-content">
+                        <div class="review-title">
+                            <span class="review-movie">《热辣滚烫》</span>
+                            <span class="review-rating">★★★★☆ 8.8分</span>
+                        </div>
+                        <p class="review-text">贾玲的减重故事真的很励志，电影中的情感戏也非常打动人心。期待她的下一部作品！</p>
+                    </div>
+                    <div class="review-actions">
+                        <button class="action-btn like-btn">
+                            <span class="action-icon">👍</span>
+                            <span class="action-count">1.8k</span>
+                        </button>
+                        <button class="action-btn comment-btn">
+                            <span class="action-icon">💬</span>
+                            <span class="action-count">246</span>
+                        </button>
+                        <button class="action-btn share-btn">
+                            <span class="action-icon">🔗</span>
+                            <span class="action-text">分享</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>关于我们</h3>
+                <ul>
+                    <li><a href="#">公司介绍</a></li>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">加入我们</a></li>
+                    <li><a href="#">用户协议</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>客户服务</h3>
+                <ul>
+                    <li><a href="#">帮助中心</a></li>
+                    <li><a href="#">意见反馈</a></li>
+                    <li><a href="#">常见问题</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>关注我们</h3>
+                <div class="social-links">
+                    <a href="#" class="social-icon">微博</a>
+                    <a href="#" class="social-icon">微信</a>
+                    <a href="#" class="social-icon">抖音</a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>下载客户端</h3>
+                <div class="qr-code">
+                    <!-- 可以放置二维码图片 -->
+                    <div class="qr-placeholder"></div>
+                    <p>扫码下载APP</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 视频资源网站. 保留所有权利.</p>
+            <p>京ICP备xxxxxx号-1</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+    <!-- 在body标签结束前添加 -->
+    <button id="back-to-top" class="back-to-top">
+        <span class="arrow">↑</span>
+        <span class="text">顶部</span>
+    </button>
+</body>
+</html>

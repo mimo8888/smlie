@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录 - 视频资源网站</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="auth-styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>视频资源网站</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="movies.html">电影</a></li>
+                <li><a href="#tv">电视剧</a></li>
+                <li><a href="#anime">动漫</a></li>
+                <li><a href="#documentary">纪录片</a></li>
+                <li><a href="vip.html">开通VIP</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="auth-main">
+        <div class="auth-container">
+            <div class="auth-box">
+                <h2>用户登录</h2>
+                <form class="auth-form">
+                    <div class="form-group">
+                        <label for="username">用户名/手机号</label>
+                        <input type="text" id="username" name="username" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="password">密码</label>
+                        <input type="password" id="password" name="password" required>
+                    </div>
+                    <div class="form-options">
+                        <label class="remember-me">
+                            <input type="checkbox" name="remember">
+                            <span>记住我</span>
+                        </label>
+                        <a href="#" class="forgot-password">忘记密码？</a>
+                    </div>
+                    <button type="submit" class="auth-submit">登录</button>
+                </form>
+                <div class="auth-divider">
+                    <span>或</span>
+                </div>
+                <div class="social-login">
+                    <button class="social-btn wechat">
+                        <span class="icon">🔰</span>
+                        微信登录
+                    </button>
+                    <button class="social-btn qq">
+                        <span class="icon">🔰</span>
+                        QQ登录
+                    </button>
+                </div>
+                <p class="auth-switch">
+                    还没有账号？<a href="register.html">立即注册</a>
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <!-- 保持与主页相同的页脚 -->
+    </footer>
+</body>
+</html>
